@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingTabFolio">
+        <attr name="slidingTabFolioTabResource" format="reference" />
+        <attr name="slidingTabFolioTabTextId" format="reference" />
+        <attr name="slidingTabFolioBarColor" format="color" />
+        <attr name="slidingTabFolioSelectedTextColor" format="color" />
+    </declare-styleable>
+</resources>
