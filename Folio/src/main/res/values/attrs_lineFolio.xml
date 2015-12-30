@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LineFolio">
+        <attr name="lineFolioSelectedColor" format="color" />
+        <attr name="lineFolioUnselectedColor" format="color" />
+        <attr name="lineFolioLineThickness" format="dimension" />
+        <attr name="lineFolioLineGap" format="dimension" />
+        <attr name="lineFolioMaxLineWidth" format="dimension" />
+    </declare-styleable>
+</resources>
