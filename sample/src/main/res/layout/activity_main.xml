@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/folioSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ViewFlipper
+            android:id="@+id/folioFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="12dp">
+
+            <com.raizlabs.folio.LineFolio
+                android:id="@+id/lineFolio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lineFolioSelectedColor="#199A49"
+                app:lineFolioUnselectedColor="#0B5D2A"/>
+
+            <com.raizlabs.folio.SimpleTextFolio
+                android:id="@+id/textFolio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:shadowColor="#0B5D2A"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="2"
+                android:textColor="#199A49"
+                android:textSize="16sp"/>
+
+            <com.raizlabs.folio.SlidingTabFolio
+                android:id="@+id/slidingTabFolio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:slidingTabFolioBarColor="#199A49"
+                app:slidingTabFolioTabResource="@layout/tab_text"
+                app:slidingTabFolioTabTextId="@+id/tab_text_text"/>
+
+        </ViewFlipper>
+    </FrameLayout>
+</LinearLayout>

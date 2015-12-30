@@ -1,4 +1,4 @@
-package com.raizlabs.folio;
+package com.raizlabs.folio.sample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
